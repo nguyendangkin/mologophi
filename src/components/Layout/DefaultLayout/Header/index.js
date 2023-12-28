@@ -9,45 +9,68 @@ const cx = classNames.bind(styles);
 function Header() {
     return (
         <header className={cx('wrapper')}>
-            <h1 className={cx('logo')}>MoLoGoPHI</h1>
+            <h1 className={cx('logo')}>
+                <Link className={cx('logo-link')} to="/">
+                    MoLoGoPHI
+                </Link>
+            </h1>
             <div className={cx('navigate')}>
-                <div className="">
-                    <Link to="">Mua Sắm</Link>
+                <div className={cx('navigate-item')}>
+                    <Link className={cx('navigate-link')} to="">
+                        Mua Sắm
+                    </Link>
                 </div>
-                <div className="">
-                    <Link to="">Mua Sắm</Link>
+                <div className={cx('navigate-item')}>
+                    <Link className={cx('navigate-link')} to="/photos">
+                        Ảnh
+                    </Link>
                 </div>
-                <div className="">
-                    <Link to="">Mua Sắm</Link>
+                <div className={cx('navigate-item')}>
+                    <Link className={cx('navigate-link')} to="">
+                        Tạp Chí
+                    </Link>
                 </div>
-                <div className="">
-                    <Link to="">Mua Sắm</Link>
+                <div className={cx('navigate-item')}>
+                    <Link className={cx('navigate-link')} to="">
+                        Cuộc Thi
+                    </Link>
                 </div>
-                <div className="">
-                    <Link to="">Mua Sắm</Link>
+                <div className={cx('navigate-item')}>
+                    <Link className={cx('navigate-link')} to="">
+                        Sự Kiện
+                    </Link>
                 </div>
-                <div className="">
-                    <Link to="">Mua Sắm</Link>
+                <div className={cx('navigate-item')}>
+                    <Link className={cx('navigate-link')} to="">
+                        Trường Học
+                    </Link>
                 </div>
             </div>
+            <div className={cx('white-space')}></div>
             <div className={cx('navigate')}>
-                <div className="">
-                    <Link to="">Trang Chính</Link>
+                <div className={cx('navigate-item')}>
+                    <Link className={cx('navigate-link')} to="">
+                        Trang Chính
+                    </Link>
                 </div>
-                <div className="">
-                    <Link to="">Thông Tin</Link>
+                <div className={cx('navigate-item')}>
+                    <Link className={cx('navigate-link')} to="">
+                        Thông Tin
+                    </Link>
                 </div>
-                <div className="">
-                    <Link to="">Đăng Nhập</Link>
+                <div className={cx('navigate-item')}>
+                    <Link className={cx('navigate-link')} to="">
+                        Đăng Nhập
+                    </Link>
                 </div>
             </div>
-            <div className="">
-                <div className="">
-                    <input placeholder="Tìm kiếm" />
+            <div className={cx('search')}>
+                <div className={cx('search-form')}>
+                    <input className={cx('search-input')} placeholder="Tìm kiếm" />
                 </div>
             </div>
-            <div className="">
-                <div>
+            <div className={cx('menu')}>
+                <div className={cx('menu-icon')}>
                     <FontAwesomeIcon icon={faBars} />
                 </div>
             </div>
