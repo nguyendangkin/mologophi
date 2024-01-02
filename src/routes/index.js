@@ -6,6 +6,12 @@ import Photos from '../pages/Photos';
 import School from '../pages/School';
 
 import { HeaderOnly } from '../components/Layout';
+import Shopping from '../pages/Shopping';
+import Magazine from '../pages/Magazine';
+import Competition from '../pages/Competition';
+import Events from '../pages/Events';
+import Homes from '../pages/Homes';
+import Contact from '../pages/Contact';
 
 export const publicRoutes = [
     { path: '/', component: Home },
@@ -14,6 +20,12 @@ export const publicRoutes = [
     { path: '/profile', component: Profile, layout: HeaderOnly },
     { path: '/photos', component: Photos },
     { path: '/school', component: School },
+    { path: '/shopping', component: Shopping },
+    { path: '/magazine', component: Magazine },
+    { path: '/competition', component: Competition },
+    { path: '/events', component: Events },
+    { path: '/homes', component: Homes },
+    { path: '/contact', component: Contact },
 ];
 
 export const privateRoutes = [];

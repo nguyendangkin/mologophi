@@ -11,7 +11,7 @@ function Header() {
     const listNavigation = [
         {
             title: 'Mua Sắm',
-            path: '/shop',
+            path: '/shopping',
         },
         {
             title: 'Ảnh',
@@ -27,7 +27,7 @@ function Header() {
         },
         {
             title: 'Sự Kiện',
-            path: '/evens',
+            path: '/events',
         },
         {
             title: 'Trường Học',
