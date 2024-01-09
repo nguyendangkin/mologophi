@@ -12,6 +12,7 @@ import Competition from '../pages/Competition';
 import Events from '../pages/Events';
 import Homes from '../pages/Homes';
 import Contact from '../pages/Contact';
+import NotFound from '../pages/NotFound';
 
 export const publicRoutes = [
     { path: '/', component: Home },
@@ -26,6 +27,8 @@ export const publicRoutes = [
     { path: '/events', component: Events },
     { path: '/homes', component: Homes },
     { path: '/contact', component: Contact },
+    { path: '/login', component: Login },
+    { path: '*', component: NotFound },
 ];
 
 export const privateRoutes = [];
